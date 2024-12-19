@@ -3,6 +3,26 @@ import { OrbitControls as e } from "three/addons/controls/OrbitControls.js";
 import * as BufferGeometryUtils from "three/addons/utils/BufferGeometryUtils.js";
 import { SUBTRACTION as t, Brush as n, Evaluator as r } from "three-bvh-csg";
 
+document.addEventListener("DOMContentLoaded", () => {
+  const playButton = document.getElementById("playButton");
+  const audio = document.getElementById("audio");
+
+  playButton.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play();
+      playButton.textContent = "🎶💕";
+    } else {
+      audio.pause();
+      playButton.textContent = "🎶💕";
+    }
+  });
+
+  audio.addEventListener("ended", () => {
+    playButton.textContent = "❤️ Reproducir Canción";
+  });
+});
+
+
 !(function () {
   "use strict";
   function a() {
