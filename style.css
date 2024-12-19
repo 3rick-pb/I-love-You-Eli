@@ -36,8 +36,18 @@ canvas {
 }
 h2 {
   position: relative;
-  color: rgb(255, 253, 254);
+  color: rgb(0, 0, 0);
 }
+
+h6{
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: cursive;
+  text-shadow: 1px 1px 5px #923a2a;
+}
+
+
 section {
   position: relative;
   width: 100vw;
